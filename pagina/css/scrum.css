@@ -1,0 +1,154 @@
+html{
+  background-color: #336699 ;
+}
+div {
+  position:absolute;
+  margin: 1px;
+  background-color: white;
+}
+
+.header{
+  position: relative;
+  margin: 1px;
+  width: 90%x;
+  height: 1%;
+  text-align:center;
+  background-color: white;
+}
+.section {
+position: relative;
+  float: left;
+  width: 778px;
+  height: 208px;
+
+}
+.section2{
+  position: relative;
+  float: left;
+  width: 700px;
+  height: 391px;
+  background-color: #336699;
+  overflow-y: scroll;
+  text-align: center;
+  font-size: 36px;
+}
+.aside {
+  position:relative;
+  float: right;
+  width: 200px;
+  background-color: #336699;
+  height: 200px;
+
+}
+.aside2{
+position: relative;
+  float: right;
+  width: 280px;
+  height: 395px;
+
+
+}
+.footer {
+  position: relative;
+  height: 30px;
+  clear: both;
+  background-color: #006666;
+}
+.listadOrtopedia{
+  position:relative;
+  width:95%;
+  overflow-y: scroll;
+}
+img{
+  position: sticky;
+
+}
+#Ortesis, #Ortesis2{
+  display:none;
+  background-color: #336699;
+  font-size: small;
+}
+
+#box_link{
+  position: absolute;
+  		top: 3px;
+  		left: 3px;
+      width: 990px;
+      height: 110px;
+  		background-color: transparent;
+
+}
+ul{
+  background-color: 	#336699;
+  font-size: 36px;
+  text-align: center;
+}
+p{
+  text-align: center;
+  font-size: 17px;
+
+}
+h1, h2{
+  font-size: medium;
+  text-align:center;
+  position:relative;
+}
+
+li{
+  list-style-type: square;
+  text-align: left;
+  font-size: 17px;
+
+
+}
+#bordefinal{
+  margin-left: 50px;
+  margin-right: 50px;
+  border-bottom: dotted;
+}
+a:link, a:visited {
+    color: black;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+#list{
+  color: white
+}
+#list:hover{
+  background-color: red;
+
+}
+a:hover{
+    background-color: white;
+}
+table{
+    margin-left: 150px;
+    margin-right: 50px;
+    width: 300px;
+}
+td{
+  border: 3px solid;
+  background-color: white;
+  font-size: 24px;
+
+}
+form{
+  font-size: medium;
+  text-align: left;
+  padding: 30px;
+  display:block;
+}
+input[Type='submit']{
+  width: 120px;
+  margin-left: 35px;
+  display: block;
+
+}
+
+input, textarea{
+  display: block;
+  margin: 15px;
+}
