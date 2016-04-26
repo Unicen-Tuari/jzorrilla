@@ -1,0 +1,21 @@
+img {
+
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: red;
+    font-style: normal;
+    font-size: 37px;
+}
+h2{
+  text-align: center;
+  text-decoration: underline;
+  color: red;
+  font-style: normal;
+  background-color: yellow;
+}
+p {
+    color:green;
+}
