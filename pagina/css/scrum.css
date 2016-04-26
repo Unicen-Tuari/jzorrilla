@@ -6,23 +6,28 @@ div {
   margin: 1px;
   background-color: white;
 }
+.general{
+  margin: 1px;
+  position: absolute;
+  background: transparent;
+}
 
-.header{
+.encabezado{
   position: relative;
   margin: 1px;
-  width: 90%x;
+  width: 90%;
   height: 1%;
   text-align:center;
   background-color: white;
 }
-.section {
+.propa {
 position: relative;
   float: left;
   width: 778px;
   height: 208px;
 
 }
-.section2{
+.contenido{
   position: relative;
   float: left;
   width: 700px;
@@ -32,7 +37,7 @@ position: relative;
   text-align: center;
   font-size: 36px;
 }
-.aside {
+.menu {
   position:relative;
   float: right;
   width: 200px;
@@ -40,7 +45,7 @@ position: relative;
   height: 200px;
 
 }
-.aside2{
+.propa2{
 position: relative;
   float: right;
   width: 280px;
@@ -48,7 +53,7 @@ position: relative;
 
 
 }
-.footer {
+.pie {
   position: relative;
   height: 30px;
   clear: both;
