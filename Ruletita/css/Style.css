@@ -1,0 +1,88 @@
+img{
+  position: relative;
+  text-align: center;
+}
+div{
+ background-color: black;
+}
+
+.contendor{
+  position: absolute;
+  background: black;
+}
+
+.encabezado{
+  position: relative;
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+.saldoyapuesta{
+  height: 350px;
+  width: 500px;
+  float: left;
+  border: 8px solid yellow;
+  background-color: green;
+}
+.ruleta{
+  height: 350px;
+  width: 458px;
+  float:right;
+  border: 8px dotted black;
+  background-color: green;
+}
+h1, span{
+  font-size: 28px;
+  text-align: left;
+  color: black;
+}
+h2 {
+  text-align: center;
+}
+p{
+  font-size: 28px;
+  text-align: left;
+  color: black;
+  display: inline;
+}
+#cambia, #Money{
+  font-size: 36px;
+  text-align: center;
+  color: white;
+  margin-left: 40px;
+}
+table{
+  margin-left:  50px;
+  margin-top:  10px;
+  margin-right: 100px;
+  display: inline-block;
+  font-size: 60px;
+}
+
+tr{
+
+  border: 5px solid black;
+}
+
+td{
+  white-space: pre;
+  border: 5px solid black;
+}
+#vacio{
+  border: transparent;
+}
+label{
+  text-align: center;
+  font-size: 28px;
+}
+input{
+  background-color: #33CC66;
+  border: 0px;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+input:hover{
+  background-color: white;
+}
