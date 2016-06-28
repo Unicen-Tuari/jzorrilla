@@ -16,14 +16,19 @@
   text-align: center;
 }
 .prop{
-  width: 10%;
+
   float: right;
+  height: 500px;
+  background-image: url(../imagenes/downrigthside.jpg);
 
 }
 .contenido {
   float: left;
-  widows: 90%;
   height: 500px ;
+  text-align: center;
+  overflow: scroll;
+  overflow-x: hidden;
+
 }
 .busca{
 margin-top: 5px;
