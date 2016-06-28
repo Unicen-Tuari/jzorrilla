@@ -1,0 +1,30 @@
+.logo {
+    overflow: hidden;
+    margin-top: 2px;
+}
+.buscador{
+    margin-top: 5px;
+    height: 20px;
+    padding: 16px 20px;
+
+}
+.pie{
+  background-color: #DDDDFF;
+  width: 100%;
+  height: 60px;
+  clear: both;
+  text-align: center;
+}
+.prop{
+  width: 10%;
+  float: right;
+
+}
+.contenido {
+  float: left;
+  widows: 90%;
+  height: 500px ;
+}
+.busca{
+margin-top: 5px;
+}
