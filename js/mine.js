@@ -11,6 +11,7 @@
           getInformationByItem("../html/ArcOrt.html");
           $(".activado").toggleClass("activado");
           $("#ArticOrt").toggleClass("activado");
+          alert("entro");
         });
 
         function getInformationByItem(item){
