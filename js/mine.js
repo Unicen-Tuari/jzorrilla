@@ -9,7 +9,7 @@
       });
     $("#ArticOrt").on("click", function(){
       getInformationByItem("../html/ArcOrt.html");
-      $(".activado").toggleClass("activado");
+    //  $(".activado").toggleClass("activado");
       $("#ArticOrt").toggleClass("activado");
       });
       $("#ArticMed").on("click", function(){
@@ -42,7 +42,6 @@
               var html = " ";
               html += resultData;
               $("#ajaxContent").html(html);
-
             },
             error:function(jqxml, status, errorThrown){
               console.log(errorThrown);
