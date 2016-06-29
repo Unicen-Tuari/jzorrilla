@@ -1,8 +1,8 @@
 
-$(document).ready(function(){
-  alert("ingresa");
-  partialrender("../html/home.html");
-});
+//$(document).ready(function(){
+  //alert("ingresa");
+  //partialrender("../html/home.html");
+// });
 $("#ArticOrt").on("click", function () {
   alert("artic ingresa");
   partialrender("../html/ArcOrt.html");
