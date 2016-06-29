@@ -89,7 +89,7 @@ function getInformationByGroup(){
        lista += "<li>nombre: " + resultData.information[i]["thing"].nombre + "</li>";
        lista += "<li>dep: " + resultData.information[i]["thing"].descripcion + "</li>";
        lista += "<li>precio: " + resultData.information[i]["thing"].precio + "</li>";
-       lista += "<button class='btn btn-default .borrar' type='button' > Borrar </button>"
+       lista += "<button class='btn btn-default borrar' type='button' > Borrar </button>"
        lista += "</ul>";
        lista +="  <p id='bordefinal' > </p>"
        $("#listadoproductos").html(lista);
