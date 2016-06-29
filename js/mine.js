@@ -46,9 +46,8 @@
               var html = "";
               html += resultData;
               $("#ajaxContent").html(html);
+              alert("cargo");
+              $("#test").html(resultData);
             },
-            error:function(jqxml, status, errorThrown){
-              console.log(errorThrown);
-            }
           });
-        }
+    //}
