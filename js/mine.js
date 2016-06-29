@@ -1,7 +1,7 @@
 "use strict";
-//  $(document).ready(function(){
-//    getInformationByItem("../html/home.html");
-//      });
+  $(document).ready(function(){
+    getInformationByItem("../html/home.html");
+      });
     $("#holmes").on("click", function(){
       getInformationByItem("../html/home.html");
       $(".activado").toggleClass("activado");
@@ -35,7 +35,7 @@
         function getInformationByItem(item){
             $.ajax({
             method: "GET",
-            dataType: 'html',
+            dataType: "html",
             url: item,
             success: function(resultData){
               //al decir que dataType es JSON, ya resultData es un objeto
