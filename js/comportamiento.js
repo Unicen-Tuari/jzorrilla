@@ -11,11 +11,14 @@ $(document).ready(function() {
   }
   function Cargardato(Data){
     $.ajax({
-        type: "GET",
+      error:function () {
+        alert("no funka");
+      },
+        method: "GET",
         url:Data,
-        dataType:'html',
+        dataType:"HTML",
         success: MostrarDato,
-        error:alert("no funka")
+
       });
   }
 
