@@ -11,7 +11,8 @@ $(document).ready(function() {
         type: "GET",
         url:Data,
         success: MostrarDato,
-        dataType:"html"
+        dataType:"html",
+      error:alert("no funka")
       }
     );
   }

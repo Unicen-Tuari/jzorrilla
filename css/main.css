@@ -18,12 +18,17 @@
 .prop{
 
   float: right;
-
+  height: 500px;
   background-image: url(../imagenes/downrigthside.jpg);
 
 }
-.contenido{
-    background-color: #e7e7e7
+.contenido {
+  float: left;
+  height: 500px;
+    text-align: center;
+  overflow: scroll;
+  overflow-x: hidden;
+
 }
 .busca{
 margin-top: 5px;
