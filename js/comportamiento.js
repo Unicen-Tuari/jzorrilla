@@ -93,3 +93,18 @@ function getInformationByGroup(){
     }
   });
 }
+function deleteInformationByItem(item) {
+  var id=item;
+  $.ajax({
+    url:"http://web-unicen.herokuapp.com/api/delete/" + id,
+    method:"DELETE",
+    success: function(resultData){
+      console.log(resultData);
+      getInformationByGroup();
+    },
+    error:function(jqxml, status, errorThrown){
+      alert('Error!');
+      console.log(errorThrown);
+    }
+  });
+}
