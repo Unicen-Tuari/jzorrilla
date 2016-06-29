@@ -13,21 +13,16 @@ div{
 
 .encabezado{
   position: relative;
-  width: 100%;
   font-size: 40px;
   text-align: center;
-  color: white;
 }
 .saldoyapuesta{
-  height: 350px;
-  width: 500px;
   float: left;
+  height: 380px;
   border: 8px solid yellow;
   background-color: green;
 }
 .ruleta{
-  height: 350px;
-  width: 458px;
   float:right;
   border: 8px dotted black;
   background-color: green;
@@ -76,13 +71,7 @@ label{
   text-align: center;
   font-size: 28px;
 }
-input{
-  background-color: #33CC66;
-  border: 0px;
-  font-size: 30px;
-  margin-left: 10px;
-}
-
-input:hover{
-  background-color: white;
+.boton{
+  display: inline-block;
+  
 }
