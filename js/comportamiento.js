@@ -34,7 +34,8 @@ $(document).ready(function() {
 
   function CargarOrtopedia() {
     $("#cabeza")[0].onclick=(function(){
-      cargardato("../html/cabeza.html")});
+      cargardato("../html/cabeza.html");
+    getInformationByGroup()});
 
   }
 function guardarproducto(){
@@ -82,13 +83,17 @@ function getInformationByGroup(){
     url: "http://web-unicen.herokuapp.com/api/group/" + grupo,
     success:function (resultData){
      var lista = "";
-     lista += "<ul>";
-     lista += "<li>nombre: " + resultData.information[0]["thing"].nombre + "</li>";
-     lista += "<li>dep: " + resultData.information[0]["thing"].descripcion + "</li>";
-     lista += "<li>precio: " + resultData.information[0]["thing"].precio + "</li>";
-     lista += "</ul>";
-     $("#cascopedico").html(lista);
-        $("#cascopedico").html(lista);
+     for (var i = 0; i < resultData.information.length; i++) {
+       lista ="";
+       lista += " <span id="listadoproductos">"
+       lista += "<ul>";
+       lista += "<li>nombre: " + resultData.information[i]["thing"].nombre + "</li>";
+       lista += "<li>dep: " + resultData.information[i]["thing"].descripcion + "</li>";
+       lista += "<li>precio: " + resultData.information[i]["thing"].precio + "</li>";
+       lista += "</ul>";
+       lista += "</span>";
+       $("#listadoproductos")[i].html(lista);
+      }
     },
     error:function(jqxml, status, errorThrown){
       console.log(errorThrown);
