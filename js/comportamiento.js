@@ -15,7 +15,10 @@ $(document).ready(function() {
       }
     );
   }
-$("#ArcticOrt").on("click",function(){Cargardato("../html/ArcOrt.html")});
+  $("#arcticort").on("click",function() {Cargardato("../html/ArcOrt.html")});
+  $("#articmed").on("click",function () {Cargardato("../html/ArcMed.html")});
+  $("#quienessomos").on("click", function() {Cargardato ("../html/contac.html")});
+  $("#holmes").on("click", function () {Cargardato("../html/home.html")});
 
 
 });
