@@ -93,10 +93,10 @@ function getInformationByGroup(){
        lista += "</ul>";
        lista +="  <p id='bordefinal' > </p>"
        $("#listadoproductos").html(lista);
-      }
-    error:function(jqxml, status, errorThrown){
+     }
+    error:function(jqxml,status,errorThrown){
       console.log(errorThrown);
-    };
+    },
       var botonesEliminar = $(".borrar");
       for (var i = 0; i < botonesEliminar.length; i++) {
         asignarEliminar(i, resultData.information[i]['_id']);
