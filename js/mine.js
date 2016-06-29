@@ -26,7 +26,7 @@
           $(".activado").toggleClass("activado");
           $("#Contacto").toggleClass("activado");
           });
-});
+//});
 
  //              $(".Artic").hide();
 //            $("dt").click(function(event){
@@ -50,4 +50,4 @@
               $("#test").html(resultData);
             },
           });
-    //}
+  }
