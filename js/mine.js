@@ -1,7 +1,7 @@
 
 $( document ).ready(function() {
   getInformationByItem("../html/home.html");
-
+)};
 
   $("#holmes").on("click", function(){
     getInformationByItem("../html/home.html");
@@ -22,14 +22,13 @@ $( document ).ready(function() {
     getInformationByItem("../html/contac.html");
     $("#Contacto").toggleClass("activado");
   });
-});
-
-           $("dt").click(function(event){
-                var desplegable = $(this).next();
-                  $('.Artic').not(desplegable).slideUp('fast');
-                    desplegable.slideToggle('fast');
-                  event.preventDefault();
-                });
+)};
+   $("dt").click(function(event){
+      var desplegable = $(this).next();
+      $('.Artic').not(desplegable).slideUp('fast');
+      desplegable.slideToggle('fast');
+      event.preventDefault();
+      });
 
 function getInformationByItem(item){
   $.ajax({
