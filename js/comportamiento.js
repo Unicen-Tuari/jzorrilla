@@ -88,6 +88,7 @@ function getInformationByGroup(){
      lista += "<li>precio: " + resultData.information[0]["thing"].precio + "</li>";
      lista += "</ul>";
      $("#cascopedico").html(lista);
+        $("#cascopedico").html(lista);
     },
     error:function(jqxml, status, errorThrown){
       console.log(errorThrown);
