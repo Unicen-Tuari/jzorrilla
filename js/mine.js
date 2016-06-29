@@ -1,13 +1,15 @@
 
 $(document).ready(function(){
+  alert("ingresa");
   partialrender("../html/home.html");
 });
 
 function partialrender(item){
+  alert("entra");
   $.ajax({
-    method: "GET";
-    dataType: "html";
-    url:item;
+    method: "GET",
+    dataType: 'html',
+    url:item,
     success: function (ReceivedData) {
       var partial = "";
       partial += ReceivedData;
