@@ -38,8 +38,7 @@
               //al decir que dataType es JSON, ya resultData es un objeto
               var html = " ";
               html += resultData;
-              $("#ajaxContent").html(resultData);
-              alert("reconocio el ajax");
+              $("#ajaxContent").html(html);
 
             },
             error:function(jqxml, status, errorThrown){
