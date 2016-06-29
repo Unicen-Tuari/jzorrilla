@@ -7,16 +7,17 @@ $(document).ready(function() {
   $("#holmes").on("click", function () {cargardato("../html/home.html")});
 });
 
-  function cargardato(Data){
+  function cargardato(item){
     $.ajax({
         error:function () {
           alert("no funka");
         },
-
-        url:Data,
+        url:item,
         dataType:"HTML",
         success: function(data) {
-            $("#ajaxContent").html(data);
+          var html="";
+          html +=data;
+            $("#ajaxContent").html(html);
         },
         method: "GET",
       });
