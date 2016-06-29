@@ -92,7 +92,7 @@ function getInformationByGroup(){
        lista += "<li>precio: " + resultData.information[i]["thing"].precio + "</li>";
        lista += "</ul>";
        lista += "</span>";
-       $("#listadoproductos")[i].html(lista);
+      // $("#listadoproductos")[i].html(lista);
       }
     },
     error:function(jqxml, status, errorThrown){
