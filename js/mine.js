@@ -1,7 +1,7 @@
 'use strict';
 $( document ).ready(function() {
   getInformationByItem("../html/home.html");
-)};
+
 
   $("#holmes").on("click", function(){
     getInformationByItem("../html/home.html");
@@ -29,7 +29,7 @@ $( document ).ready(function() {
       desplegable.slideToggle('fast');
       event.preventDefault();
       });
-
+)};
 function getInformationByItem(item){
   $.ajax({
     method: "GET",
