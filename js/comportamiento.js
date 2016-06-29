@@ -8,7 +8,7 @@ $(document).ready(function() {
 });
   $("dt").click(function(event){
              var desplegable = $(this).next();
-             $('dd').not(desplegable).slideUp('fast');
+             $('#Artic').not(desplegable).slideUp('fast');
               desplegable.slideToggle('fast');
               event.preventDefault();
               })
