@@ -1,4 +1,9 @@
   $(document).ready(function(){
+    $("#holmes").on("click", function(){
+      getInformationByItem("../html/home.html");
+      $(".activado").toggleClass("activado");
+      $("#holmes").toggleClass("activado");
+      });
       	$(".Artic").hide();
 	$("dt").click(function(event){
              var desplegable = $(this).next();
@@ -12,6 +17,7 @@
           $(".activado").toggleClass("activado");
           $("#ArticOrt").toggleClass("activado");
           });
+
 
         function getInformationByItem(item){
             $.ajax({
