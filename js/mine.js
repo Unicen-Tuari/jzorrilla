@@ -3,7 +3,8 @@ $( document ).ready(function() {
   getInformationByItem("../html/home.html");
 
 
-  $("#holmes").on("click", getInformationByItem("../html/home.html"));
+  $("#holmes").on("click", function(){
+    getInformationByItem("../html/home.html");
     $("#holmes").toggleClass("activado");
   });
 
