@@ -3,7 +3,11 @@ $(document).ready(function(){
   alert("ingresa");
   partialrender("../html/home.html");
 });
-
+$("#ArticOrt").on("click", function () {
+  alert("artic ingresa");
+  partialrender("../html/ArcOrt.html");
+  $("#ArticOrt").toggleClass("activado");
+})
 function partialrender(item){
   alert("entra");
   $.ajax({
