@@ -39,7 +39,7 @@ function guardarproducto(){
     descripcion: null,
     precio: null
   };
-  var inputs = $(".namae");
+  var inputs = $(".namea");
   for (var i = 0; i < inputs.length; i++) {
     if (inputs[i].value == "") {
       alert('debe llenar todos los campos');
