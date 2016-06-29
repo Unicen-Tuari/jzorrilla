@@ -1,8 +1,8 @@
 "use strict";
-//$(document).ready(function(){
-  //alert("ingresa");
-  //partialrender("../html/home.html");
-// });
+$(document).ready(function(){
+alert("ingresa");
+partialrender("../html/home.html");
+
 function partialrender(item){
   alert("entra");
   $.ajax({
@@ -21,7 +21,7 @@ $("#ArticOrt").on("click", function () {
   partialrender("../html/ArcOrt.html");
   $("#ArticOrt").toggleClass("activado");
 })
-
+});
 
 
 //   $("dt").click(function(){
