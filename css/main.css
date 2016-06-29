@@ -45,3 +45,7 @@ dt{
   background-color: #e8e8e8
 
 }
+.activado{
+  background-color: white !important;
+  color: #4F628E !important;
+}
