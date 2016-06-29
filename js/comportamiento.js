@@ -15,8 +15,8 @@ $(document).ready(function() {
       }
     );
   }
-  $("#arcticort").on("click",function() {Cargardato("../html/ArcOrt.html")});
-  $("#articmed").on("click",function () {Cargardato("../html/ArcMed.html")});
+  $("#articort").on("click",function() {Cargardato("../html/arcort.html")});
+  $("#articmed").on("click",function () {Cargardato("../html/arcmed.html")});
   $("#quienessomos").on("click", function() {Cargardato ("../html/contac.html")});
   $("#holmes").on("click", function () {Cargardato("../html/home.html")});
 
