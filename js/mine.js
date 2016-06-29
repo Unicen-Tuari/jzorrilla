@@ -1,4 +1,4 @@
-
+"Use Strict";
 //$(document).ready(function(){
   //alert("ingresa");
   //partialrender("../html/home.html");
