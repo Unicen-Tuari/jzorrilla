@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 function partialrender(item){
   $.ajax({
-    method: "get";
+    method: "GET";
     dataType: "html";
     url:item;
     success: function (ReceivedData) {
@@ -13,7 +13,7 @@ function partialrender(item){
       partial += ReceivedData;
       $("#ajaxContent").html(partial);
     }
-  })
+  });
 
 }
 //   $("dt").click(function(){
