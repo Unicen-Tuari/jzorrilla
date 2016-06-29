@@ -17,6 +17,11 @@
           $(".activado").toggleClass("activado");
           $("#ArticOrt").toggleClass("activado");
           });
+          $("#ArticMed").on("click", function(){
+            getInformationByItem("../html/ArcMed.html");
+            $(".activado").toggleClass("activado");
+            $("#ArticMed").toggleClass("activado");
+            });
 
 
         function getInformationByItem(item){
