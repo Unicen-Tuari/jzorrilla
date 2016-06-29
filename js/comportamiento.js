@@ -74,3 +74,22 @@ function guardarproducto(){
   }
 );
 }
+function getInformationByGroup(){
+  var grupo = 69;
+  $.ajax({
+    method: "GET",
+    dataType: 'JSON',
+    url: "http://web-unicen.herokuapp.com/api/group/" + grupo,
+    success:function (resultData){
+     var lista = "";
+     lista += "<ul>";
+     lista += "<li>nombre: " + resultData.information["thing"].nombre + "</li>";
+     lista += "<li>dep: " + resultData.information["thing"].descripcion + "</li>";
+     lista += "<li>precio: " + resultData.information["thing"].precio + "</li>";
+     lista += "</ul>"
+    },
+    error:function(jqxml, status, errorThrown){
+      console.log(errorThrown);
+    }
+  });
+}
