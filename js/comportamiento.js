@@ -86,7 +86,8 @@ function getInformationByGroup(){
      lista += "<li>nombre: " + resultData.information[0]["thing"].nombre + "</li>";
      lista += "<li>dep: " + resultData.information[0]["thing"].descripcion + "</li>";
      lista += "<li>precio: " + resultData.information[0]["thing"].precio + "</li>";
-     lista += "</ul>"
+     lista += "</ul>";
+     $("#cascopedico").html(lista);
     },
     error:function(jqxml, status, errorThrown){
       console.log(errorThrown);
