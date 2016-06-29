@@ -1,13 +1,13 @@
 "use strict";
 $(document).ready(function() {
-  Cargardato("../html/home.html");
-  $("#articort").on("click",function() {Cargardato("../html/arcort.html")});
-  $("#articmed").on("click",function () {Cargardato("../html/arcmed.html")});
-  $("#quienessomos").on("click", function() {Cargardato ("../html/contac.html")});
-  $("#holmes").on("click", function () {Cargardato("../html/home.html")});
+  cargardato("../html/home.html");
+  $("#articort").on("click",function() {cargardato("../html/arcort.html")});
+  $("#articmed").on("click",function () {cargardato("../html/arcmed.html")});
+  $("#quienessomos").on("click", function() {cargardato ("../html/contac.html")});
+  $("#holmes").on("click", function () {cargardato("../html/home.html")});
 
 
-  function Cargardato(Data){
+  function cargardato(Data){
     $.ajax({
         error:function () {
           alert("no funka");
