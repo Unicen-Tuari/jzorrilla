@@ -1,6 +1,8 @@
 
 $( document ).ready(function() {
   getInformationByItem("../html/home.html");
+  });
+
   $("#holmes").on("click", function(){
     getInformationByItem("../html/home.html");
     $("#holmes").toggleClass("activado");
@@ -15,11 +17,11 @@ $( document ).ready(function() {
     getInformationByItem("../html/ArcOrt.html");
     $("#ArticOrt").toggleClass("activado");
   });
+
   $("#Contacto").on("click", function(){
     getInformationByItem("../html/contac.html");
     $("#Contacto").toggleClass("activado");
   });
-});
 
 
  //              $(".Artic").hide();
