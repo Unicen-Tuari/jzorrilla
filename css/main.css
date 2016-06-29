@@ -38,11 +38,8 @@ margin-top: 5px;
 }
 .clasificacion{
   font-size: 16px;
-  text-align: left;
-  line-height: 2.1;
-  background-color: #e8e8e8
 }
-.Artic{
+.Artic , .clasificacion{
 
   text-align: left;
     line-height: 2.1;

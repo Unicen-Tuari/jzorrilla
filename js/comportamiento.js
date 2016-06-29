@@ -1,8 +1,7 @@
 "use strict";
 $(document).ready(function() {
   cargardato("../html/home.html");
-  $("#articort").on("click",function() {cargardato("../html/ArcOrt.html");
-        $(".artic").hide()});
+  $("#articort").on("click",function() {cargardato("../html/ArcOrt.html")});
   $("#articmed").on("click",function () {cargardato("../html/ArcMed.html")});
   $("#contacto").on("click", function() {cargardato ("../html/contac.html")});
   $("#holmes").on("click", function () {cargardato("../html/home.html")});
@@ -22,9 +21,3 @@ $(document).ready(function() {
         method: "GET",
       });
   }
-  $(".clasificacion").on("click",function(event){
-             var desplegable = $(this).next();
-             $('.Artic').not(desplegable).slideUp('fast');
-              desplegable.slideToggle('fast');
-              event.preventDefault();
-            });
