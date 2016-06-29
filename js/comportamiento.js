@@ -21,6 +21,11 @@ $(document).ready(function() {
           if (item === "../html/ArcOrt.html") {
             CargarOrtopedia();
           }
+          else if (item=== "../html/cabeza.html") {
+            $("#Agregar")[0].onclick=function(){
+              guardarproducto();
+            }
+          }
         },
         method: "GET",
       });
