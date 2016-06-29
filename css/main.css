@@ -18,14 +18,13 @@
 .prop{
 
   float: right;
-  height: 500px;
+  height: 100%;
   background-image: url(../imagenes/downrigthside.jpg);
 
 }
 .contenido {
   float: left;
-  height: 500px ;
-  text-align: center;
+    text-align: center;
   overflow: scroll;
   overflow-x: hidden;
 
