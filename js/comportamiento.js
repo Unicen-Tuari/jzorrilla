@@ -6,13 +6,6 @@ $(document).ready(function() {
   $("#contacto").on("click", function() {cargardato ("../html/contac.html")});
   $("#holmes").on("click", function () {cargardato("../html/home.html")});
 });
-  $("dt").click(function(event){
-             var desplegable = $(this).next();
-             $('#Artic').not(desplegable).slideUp('fast');
-              desplegable.slideToggle('fast');
-              event.preventDefault();
-              })
-  });
   function cargardato(item){
     $.ajax({
         error:function () {
@@ -28,3 +21,9 @@ $(document).ready(function() {
         method: "GET",
       });
   }
+  $("dt").click(function(event){
+             var desplegable = $(this).next();
+             $('#Artic').not(desplegable).slideUp('fast');
+              desplegable.slideToggle('fast');
+              event.preventDefault();
+            });
