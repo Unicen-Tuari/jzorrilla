@@ -18,13 +18,13 @@ function generarAjax(item){
     }
 
   });
-}
+  };
 $("#ArticOrt").on("click", function () {
   alert("artic ingresa");
   generarAjax("../html/ArcOrt.html");
   $("#ArticOrt").toggleClass("activado");
-})
- });
+});
+});
 //   $("dt").click(function(){
   //    var desplegable = $(this).next();
     //  $('.Artic').not(desplegable).slideUp('fast');
