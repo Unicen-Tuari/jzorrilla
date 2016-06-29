@@ -1,4 +1,4 @@
-
+'use strict';
 $( document ).ready(function() {
   getInformationByItem("../html/home.html");
 )};
@@ -22,7 +22,7 @@ $( document ).ready(function() {
     getInformationByItem("../html/contac.html");
     $("#Contacto").toggleClass("activado");
   });
-)};
+
    $("dt").click(function(event){
       var desplegable = $(this).next();
       $('.Artic').not(desplegable).slideUp('fast');
