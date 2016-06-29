@@ -5,7 +5,7 @@ $(document).ready(function() {
   $("#articmed").on("click",function () {cargardato("../html/arcmed.html")});
   $("#quienessomos").on("click", function() {cargardato ("../html/contac.html")});
   $("#holmes").on("click", function () {cargardato("../html/home.html")});
-
+});
 
   function cargardato(Data){
     $.ajax({
@@ -21,7 +21,3 @@ $(document).ready(function() {
         method: "GET",
       });
   }
-
-
-
-});
