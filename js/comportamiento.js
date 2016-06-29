@@ -28,7 +28,7 @@ $(document).ready(function() {
   }
 
   function CargarOrtopedia() {
-    $("#cabeza").onclick=(function(){
+    $("#cabeza")[0].onclick=(function(){
       cargardato("../html/cabeza.html")});
 
   }
