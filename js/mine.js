@@ -1,4 +1,4 @@
-"use stric";
+
 $(document).ready(function(){
   partialrender("../html/home.html");
 });
