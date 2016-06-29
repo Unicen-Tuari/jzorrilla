@@ -4,41 +4,31 @@
     <meta charset="utf-8">
     <title> Ruleetiitaaah! </title>
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/main.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
     </head>
   <body>
-  <div class='contenedor'>
-      <div class='encabezado'><!-- Logo del Casino --->
+  <div class=' contenedor'>
+      <div class='col-md-12 encabezado'><!-- Logo del Casino --->
         <img src="images/leslu.png" alt="el casino papah!" />
 
       </div>
-    <div class='saldoyapuesta'>  <!-- Vista de las apuesta y saldo --->
-        <h1><Span id='Money'> Dispone de $100 realize su apuesta</Span> </h1>
-        <h1>Apuesta actual :  <p> $10 </p> </h1>
-        <h1><p>Gana el doble del numero que apuesta, para numeros menores que 5 gana $5</p></h1>
-        <input type='radio' name='apuesta' id="0" >
-        <label for='radio0'>0</label>
-        <input type='radio' name='apuesta' id="1" >
-        <label for='radio1'>1</label>
-        <input type='radio' name='apuesta' id="2"  >
-        <label for='radio2'>2</label>
-        <input type='radio' name='apuesta' id="3"  >
-        <label for='radio3'>3</label>
-        <input type='radio' name='apuesta' id="4"  >
-        <label for='radio4'>4</label>
-        <input type='radio' name='apuesta' id="5"  >
-        <label for='radio5'>5</label>
-        <input type='radio' name='apuesta' id="6"  >
-        <label for='radio6'>6</label>
-        <input type='radio' name='apuesta' id="7"  >
-        <label for='radio7'>7</label>
-        <input type='radio' name='apuesta' id="8"  >
-        <label for='radio8'>8</label>
-        <input type='radio' name='apuesta' id="9"  >
-        <label for='radio9'>9</label>
-        <h2><input type="button" name="tirar" onclick="Apostar()" value="APOSTAR"></h2>
+    <div class='col-md-6 saldoyapuesta'>  <!-- Vista de las apuesta y saldo --->
+      <span id="Saldo" class="credito"> Credito = $100 </span>
+      <ul>
+          <button class="btn - default  - boton"type="button" name="button">Pares</button>
+          <button class="btn - default  - boton"type="button" name="button">Impares</button>
+      </ul>
+      <ul>
+          <button class="btn - default  - boton"type="button" name="button">Rojos</button>
+          <button class="btn - default  - boton"type="button" name="button">Negros</button>
+      </ul>
+      <ul>
+          <button class="btn - default - boton "type="button" name="button">Mayores</button>
+          <button class="btn - default  - boton"type="button" name="button">Menores</button>
+      </ul>
     </div>
-    <div class='ruleta'> <!-- Vista de la ruleta --->
+    <div class='col-md-6 ruleta'> <!-- Vista de la ruleta --->
        <table>
          <tr>
            <td id='vacio'> </td>
@@ -63,7 +53,12 @@
       </div>
 
   </div>
-
+  <script src="js/jquery-3.0.0.min.js" charset="utf-8"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/rule.js"></script>
   </body>
 
 </html>
