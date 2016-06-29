@@ -83,9 +83,9 @@ function getInformationByGroup(){
     success:function (resultData){
      var lista = "";
      lista += "<ul>";
-     lista += "<li>nombre: " + resultData.information["thing"].nombre + "</li>";
-     lista += "<li>dep: " + resultData.information["thing"].descripcion + "</li>";
-     lista += "<li>precio: " + resultData.information["thing"].precio + "</li>";
+     lista += "<li>nombre: " + resultData.information["thing"]."nombre" + "</li>";
+     lista += "<li>dep: " + resultData.information["thing"]."descripcion" + "</li>";
+     lista += "<li>precio: " + resultData.information["thing"]."precio" + "</li>";
      lista += "</ul>"
     },
     error:function(jqxml, status, errorThrown){
