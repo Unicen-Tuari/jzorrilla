@@ -18,7 +18,7 @@ $(document).ready(function() {
           var html="";
           html +=data;
           $("#ajaxContent").html(html);
-          if (item == "../html/ArcOrt.html") {
+          if (item === "../html/ArcOrt.html") {
             CargarOrtopedia();
           }
         },
