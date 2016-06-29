@@ -22,6 +22,11 @@
             $(".activado").toggleClass("activado");
             $("#ArticMed").toggleClass("activado");
             });
+            $("#Contacto").on("click", function(){
+              getInformationByItem("../html/contac.html");
+              $(".activado").toggleClass("activado");
+              $("#Contacto").toggleClass("activado");
+              });
 
 
         function getInformationByItem(item){
