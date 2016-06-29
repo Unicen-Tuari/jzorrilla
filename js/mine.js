@@ -1,10 +1,9 @@
 
 $( document ).ready(function() {
   getInformationByItem("../html/home.html");
-  });
 
-  $("#holmes").on("click", function(){
-    getInformationByItem("../html/home.html");
+
+  $("#holmes").on("click", getInformationByItem("../html/home.html"));
     $("#holmes").toggleClass("activado");
   });
 
@@ -22,7 +21,7 @@ $( document ).ready(function() {
     getInformationByItem("../html/contac.html");
     $("#Contacto").toggleClass("activado");
   });
-
+});
 
  //              $(".Artic").hide();
 //            $("dt").click(function(event){
