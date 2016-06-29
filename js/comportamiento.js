@@ -21,9 +21,9 @@ $(document).ready(function() {
         method: "GET",
       });
   }
-  $("dt").click(function(event){
+  $(".clasificacion").on("click",function(event){
              var desplegable = $(this).next();
-             $('#Artic').not(desplegable).slideUp('fast');
+             $('.Artic').not(desplegable).slideUp('fast');
               desplegable.slideToggle('fast');
               event.preventDefault();
             });
