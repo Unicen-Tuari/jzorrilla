@@ -1,6 +1,6 @@
 "use strict";
-  $(document).ready(function(){
-    getInformationByItem("../html/home.html");
+//  $(document).ready(function(){
+//    getInformationByItem("../html/home.html");
 
     $("#holmes").on("click", function(){
       getInformationByItem("../html/home.html");
