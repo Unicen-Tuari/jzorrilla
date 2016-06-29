@@ -85,7 +85,7 @@ function getInformationByGroup(){
      var lista = "";
      for (var i = 0; i < resultData.information.length; i++) {
        lista ="";
-       lista += " <span id="listadoproductos">";
+       lista += "<span id='listadoproductos'>";
        lista += "<ul>";
        lista += "<li>nombre: " + resultData.information[i]["thing"].nombre + "</li>";
        lista += "<li>dep: " + resultData.information[i]["thing"].descripcion + "</li>";
