@@ -98,12 +98,11 @@ function getInformationByGroup(){
     error:function(jqxml,status,errorThrown){
       console.log(errorThrown);
     },
-    var botonesEliminar = $(".borrar");
-    for (var i = 0; i < botonesEliminar.length; i++) {
-      asignarEliminar(i, resultData.information[i]['_id']);
-    }
-
-    });
+  });
+  var botonesEliminar = $(".borrar");
+  for (var i = 0; i < botonesEliminar.length; i++) {
+    asignarEliminar(i, resultData.information[i]['_id']);
+  }
 }
 
 function asignarEliminar(i, id){
