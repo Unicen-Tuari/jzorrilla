@@ -21,3 +21,4 @@ $(document).ready(function() {
         method: "GET",
       });
   }
+  $("#cabeza").on("click",function(){cargardato("../html/cabeza.html")});
