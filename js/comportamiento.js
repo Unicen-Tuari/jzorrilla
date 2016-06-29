@@ -17,13 +17,14 @@ $(document).ready(function() {
         success: function(data) {
           var html="";
           html +=data;
-            $("#ajaxContent").html(html);
+          $("#ajaxContent").html(html);
+          if (item == "../html/ArcOrt.html") {
+            CargarOrtopedia();
+          }
         },
         method: "GET",
       });
-      if (item == "../html/ArcOrt.html") {
-        CargarOrtopedia();
-      }
+
   }
 
   function CargarOrtopedia() {
