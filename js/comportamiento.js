@@ -94,15 +94,16 @@ function getInformationByGroup(){
            lista +="  <p id='bordefinal' > </p>"
            $("#listadoproductos").html(lista);
          }
+         var botonesEliminar = $(".borrar");
+         for (var i = 0; i < botonesEliminar.length; i++) {
+           asignarEliminar(i, resultData.information[i]['_id']);
+         }
        },
     error:function(jqxml,status,errorThrown){
       console.log(errorThrown);
     },
   });
-  var botonesEliminar = $(".borrar");
-  for (var i = 0; i < botonesEliminar.length; i++) {
-    asignarEliminar(i, resultData.information[i]['_id']);
-  }
+
 }
 
 function asignarEliminar(i, id){
