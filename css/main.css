@@ -46,3 +46,8 @@ margin-top: 5px;
   background-color: #e8e8e8
 
 }
+#bordefinal{
+  margin-left: 50px;
+  margin-right: 50px;
+  border-bottom: dotted;
+}

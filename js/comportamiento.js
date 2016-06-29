@@ -89,8 +89,9 @@ function getInformationByGroup(){
        lista += "<li>nombre: " + resultData.information[i]["thing"].nombre + "</li>";
        lista += "<li>dep: " + resultData.information[i]["thing"].descripcion + "</li>";
        lista += "<li>precio: " + resultData.information[i]["thing"].precio + "</li>";
+       lista += "<button class='btn btn-default .borrar' id='borrar' type='button' > Borrar </button>"
        lista += "</ul>";
-
+       lista +="  <p id='bordefinal' > </p>"
        $("#listadoproductos").html(lista);
       }
     },
@@ -98,6 +99,18 @@ function getInformationByGroup(){
       console.log(errorThrown);
     }
   });
+  var botonesEliminar = $(".borrar");
+  for (var i = 0; i < botonesEliminar.length; i++) {
+    asignarEliminar(i, resultData.information[i]['_id']);
+  }
+}
+
+function asignarEliminar(i, id){
+  var boton = $(".borrar")[i];
+  boton.onclick = function(){
+    deleteInformationByItem(id);
+  }
+}
 }
 function deleteInformationByItem(item) {
   var id=item;
