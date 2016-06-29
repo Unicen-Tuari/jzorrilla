@@ -104,14 +104,13 @@ function getInformationByGroup(){
     asignarEliminar(i, resultData.information[i]['_id']);
   }
 }
-
 function asignarEliminar(i, id){
   var boton = $(".borrar")[i];
   boton.onclick = function(){
     deleteInformationByItem(id);
   }
 }
-}
+
 function deleteInformationByItem(item) {
   var id=item;
   $.ajax({
