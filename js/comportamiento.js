@@ -15,10 +15,7 @@ $(document).ready(function() {
       }
     );
   }
-$("#ArcticOrt").on("click",function(){
-  Cargardato("../html/ArcOrt.html");
-  $("#ArcticOrt").toggleClass("activado");
-})
+$("#ArcticOrt").on("click",function(){Cargardato("../html/ArcOrt.html")});
 
 
 });
