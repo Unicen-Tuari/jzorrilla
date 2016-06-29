@@ -5,7 +5,7 @@ $(document).ready(function() {
   $("#articmed").on("click",function () {cargardato("../html/ArcMed.html")});
   $("#contacto").on("click", function() {cargardato ("../html/contac.html")});
   $("#holmes").on("click", function () {cargardato("../html/home.html")});
-  $("#cabeza").on("click",function(){cargardato("../html/cabeza.html")});
+
 });
   function cargardato(item){
     $.ajax({
@@ -21,4 +21,12 @@ $(document).ready(function() {
         },
         method: "GET",
       });
+      if (item == "../html/ArcOrt.html") {
+        CargarOrtopedia();
+      }
+  }
+
+  function CargarOrtopedia() {
+    $("#cabeza").on("click",function(){cargardato("../html/cabeza.html")});
+
   }
