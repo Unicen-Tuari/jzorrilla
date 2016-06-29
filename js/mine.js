@@ -1,32 +1,27 @@
 "use strict";
-//  $(document).ready(function(){
-//    getInformationByItem("../html/home.html");
+  $(document).ready(function(){
+  getInformationByItem("../html/home.html");
 
     $("#holmes").on("click", function(){
       getInformationByItem("../html/home.html");
-    //  $(".activado").toggleClass("activado");
-  //    $("#holmes").toggleClass("activado");
-    alert("sale de la funcion con el elemento");
+      $("#holmes").toggleClass("activado");
       });
 
     $("#ArticOrt").on("click", function(){
       getInformationByItem("../html/ArcOrt.html");
-      $(".activado").toggleClass("activado");
       $("#ArticOrt").toggleClass("activado");
       });
 
       $("#ArticMed").on("click", function(){
         getInformationByItem("../html/ArcMed.html");
-        $(".activado").toggleClass("activado");
         $("#ArticMed").toggleClass("activado");
         });
 
         $("#Contacto").on("click", function(){
           getInformationByItem("../html/contac.html");
-          $(".activado").toggleClass("activado");
           $("#Contacto").toggleClass("activado");
           });
-//});
+});
 
  //              $(".Artic").hide();
 //            $("dt").click(function(event){
@@ -38,17 +33,14 @@
 
         function getInformationByItem(item){
             $.ajax({
-
             dataType: "HTML",
             url: item,
             success: function(receivedData){
-              //al decir que dataType es JSON, ya resultData es un objeto
               var html = "";
               html += receivedData;
               $("#ajaxContent").html(html);
               alert("cargo");
-              $("#test").html(item);
               },
-                method: "GET",
+                method: "GET"
           });
   }
