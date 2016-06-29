@@ -1,47 +1,24 @@
+"use stric";
+$(document).ready(function(){
+  partialrender("../html/home.html");
+});
 
-$( document ).ready(function() {
-  getInformationByItem("../html/home.html");
+function partialrender(item){
+  $.ajax({
+    method: "get";
+    dataType: "html";
+    url:item;
+    success: function (ReceivedData) {
+      var partial = "";
+      partial += ReceivedData;
+      $("#ajaxContent").html(partial);
+    }
+  })
 
-  $("#holmes").on("click", function(){
-    getInformationByItem("../html/home.html");
-    $("#holmes").toggleClass("activado");
-  });
-
-  $("#ArticMed").on("click", function(){
-    getInformationByItem("../html/ArcMed.html");
-    $("#ArticMed").toggleClass("activado");
-  });
-
-  $("#ArticOrt").on("click", function(){
-    getInformationByItem("../html/ArcOrt.html");
-    $("#ArticOrt").toggleClass("activado");
-  });
-
-  $("#Contacto").on("click", function(){
-    getInformationByItem("../html/contac.html");
-    $("#Contacto").toggleClass("activado");
-  });
-)};
-
+}
 //   $("dt").click(function(){
   //    var desplegable = $(this).next();
     //  $('.Artic').not(desplegable).slideUp('fast');
       //desplegable.slideToggle('fast');
       //event.preventDefault();
       //});
-function getInformationByItem(item){
-  $.ajax({
-    method: "GET",
-    dataType: 'html',
-    url: item,
-    success: function(resultData){
-      //al decir que dataType es JSON, ya resultData es un objeto
-      var html = "";
-      html += resultData;
-      $("#ajaxContent").html(html);
-    },
-    error:function(jqxml, status, errorThrown){
-      console.log(errorThrown);
-    }
-  });
-}
