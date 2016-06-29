@@ -2,7 +2,6 @@
 $( document ).ready(function() {
   getInformationByItem("../html/home.html");
 
-
   $("#holmes").on("click", function(){
     getInformationByItem("../html/home.html");
     $("#holmes").toggleClass("activado");
@@ -33,7 +32,7 @@ $( document ).ready(function() {
 function getInformationByItem(item){
   $.ajax({
     method: "GET",
-    dataType: "HTML",
+    dataType: 'html',
     url: item,
     success: function(resultData){
       //al decir que dataType es JSON, ya resultData es un objeto
