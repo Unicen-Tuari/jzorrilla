@@ -11,19 +11,20 @@
           getInformationByItem("../html/ArcOrt.html");
           $(".activado").toggleClass("activado");
           $("#ArticOrt").toggleClass("activado");
-          alert("entro");
-        });
+          });
 
         function getInformationByItem(item){
-          $.ajax({
+            $.ajax({
             method: "GET",
             dataType: 'html',
             url: item,
             success: function(resultData){
               //al decir que dataType es JSON, ya resultData es un objeto
-              var html = "";
+              var html = " ";
               html += resultData;
-              $("#ajaxContent").html(html);
+              $("#ajaxContent").html(resultData);
+              alert("reconocio el ajax");
+
             },
             error:function(jqxml, status, errorThrown){
               console.log(errorThrown);
