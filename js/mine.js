@@ -38,16 +38,17 @@
 
         function getInformationByItem(item){
             $.ajax({
-            method: "GET",
+
             dataType: "HTML",
             url: item,
-            success: function(resultData){
+            success: function(receivedData){
               //al decir que dataType es JSON, ya resultData es un objeto
               var html = "";
-              html += resultData;
+              html += receivedData;
               $("#ajaxContent").html(html);
               alert("cargo");
-              $("#test").html(resultData);
-            },
+              $("#test").html(item);
+              },
+                method: "GET",
           });
   }
