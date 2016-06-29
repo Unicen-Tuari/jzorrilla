@@ -22,7 +22,9 @@
   background-image: url(../imagenes/downrigthside.jpg);
 
 }
-
+.contenido{
+    background-color: #e7e7e7
+}
 .busca{
 margin-top: 5px;
 }
