@@ -6,19 +6,19 @@ $(document).ready(function() {
   $("#quienessomos").on("click", function() {Cargardato ("../html/contac.html")});
   $("#holmes").on("click", function () {Cargardato("../html/home.html")});
 
-  function MostrarDato(Dato){
-    $("#ajaxContent").html(Dato);
-  }
+
   function Cargardato(Data){
     $.ajax({
-      error:function () {
-        alert("no funka");
-      },
-        method: "GET",
+        error:function () {
+          alert("no funka");
+        },
+
         url:Data,
         dataType:"HTML",
-        success: MostrarDato,
-
+        success: function(data) {
+            $("#ajaxContent").html(data);
+        },
+        method: "GET",
       });
   }
 
