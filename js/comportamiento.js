@@ -4,7 +4,7 @@ $(document).ready(function() {
   $("#articort").on("click",function() {cargardato("../html/ArcOrt.html")});
   $("#articmed").on("click",function () {cargardato("../html/ArcMed.html")});
   $("#contacto").on("click", function() {cargardato ("../html/contac.html")});
-  $("#quienessomos").on("click", function() {cargardato ("../html/quienessomos.html")});
+  $("#quienessomos").on("click", function() {cargardato ("../html/somos.html")});
   $("#holmes").on("click", function () {cargardato("../html/home.html")});
 
 });
