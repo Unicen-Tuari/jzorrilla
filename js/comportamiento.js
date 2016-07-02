@@ -93,7 +93,7 @@ ObtenerDato();
       var boton = $(".borrar")[i];
       boton.onclick = function(){
       BorrarInfoporID((resultData.information[i]['_id']));
-      })
+      }
     }
   }
 
