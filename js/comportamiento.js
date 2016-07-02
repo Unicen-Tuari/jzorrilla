@@ -82,20 +82,17 @@ ObtenerDato();
    for (var i = 0; i < resultData.information.length; i++) {
      lista += "<tr>";
      lista += "<td class ='Artic'> " + resultData.information[i]["thing"].nombre + "</td>";
-     lista += "<td class= 'Artic'>: " + resultData.information[i]["thing"].descripcion + "</td>";
+     lista += "<td class= 'Artic'> " + resultData.information[i]["thing"].descripcion + "</td>";
      lista += "<td class ='Artic'> " + resultData.information[i]["thing"].precio + "</td>";
      lista += "<td class ='Artic'> <button class='btn btn-default borrar' type='button' > Borrar </button> </td>"
-     lista +="  <p id='bordefinal' > </p>"
      lista += "</tr>";
      $("#listadoproductos").html(lista);
     }
     var botonesEliminar = $(".borrar");
     for (var i = 0; i < botonesEliminar.length; i++) {
-      var boton = $(".borrar")[i];
-          id=resultData.information[i]['_id']; ;
-        boton.onclick = function(){
-        BorrarInfoporID(id);
-      }
+        $(".borrar")[i].on("click", function(){
+        BorrarInfoporID((resultData.information[i]['_id']));
+      })
     }
   }
 
