@@ -32,8 +32,18 @@ $(document).ready(function() {
       });
 
   }
+function desplegar() {
+  $(".Artic").hide();
+	$(".clasificacion").click(function(event){
+             var desplegable = $(this).next();
+             $('.Artic').not(desplegable).slideUp('fast');
+              desplegable.slideToggle('fast');
+              event.preventDefault();
+              })
 
+}
   function CargarOrtopedia() {
+    desplegar();
     $("#cabeza")[0].onclick=(function(){
       cargardato("../html/cabeza.html");
     ObtenerDato()});
