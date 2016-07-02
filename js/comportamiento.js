@@ -107,10 +107,10 @@ function ObtenerDato(){
     url: "http://web-unicen.herokuapp.com/api/group/" + grupo,
     success:function (resultData){
         GenerarTabla(resultData);
-         }
+      },
     error:function(jqxml,status,errorThrown){
       console.log(errorThrown);
-    },
+    }
   });
 
 }
