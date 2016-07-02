@@ -77,7 +77,7 @@ function guardarproducto(){
 );
 ObtenerDato();
 }
- function GenerarTabla(Dato) {
+ function GenerarTabla(resultData) {
    var lista = "";
    for (var i = 0; i < resultData.information.length; i++) {
      lista += "<tr>";
