@@ -90,8 +90,9 @@ ObtenerDato();
     }
     var botonesEliminar = $(".borrar");
     for (var i = 0; i < botonesEliminar.length; i++) {
-        $(".borrar")[i].on("click", function(){
-        BorrarInfoporID((resultData.information[i]['_id']));
+      var boton = $(".eliminar")[i];
+      boton.onclick = function(){
+      BorrarInfoporID((resultData.information[i]['_id']));
       })
     }
   }
