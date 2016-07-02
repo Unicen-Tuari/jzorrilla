@@ -27,6 +27,9 @@ $(document).ready(function() {
               guardarproducto();
             }
           }
+          else if (item ==="../html/ArcMed.html") {
+            desplegar();
+          }
         },
         method: "GET",
       });
