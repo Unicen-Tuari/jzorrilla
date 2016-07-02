@@ -94,9 +94,8 @@ ObtenerDato();
       $(".borrar")[i].onclick = function(){
         BorrarInfoporID(resultData.information[i]['_id']);
       }
-
     }
-  },
+  }
 
 
 
