@@ -36,7 +36,7 @@ $(document).ready(function() {
   function CargarOrtopedia() {
     $("#cabeza")[0].onclick=(function(){
       cargardato("../html/cabeza.html");
-    getInformationByGroup()});
+    ObtenerDato()});
 
   }
 function guardarproducto(){
@@ -68,38 +68,47 @@ function guardarproducto(){
     url: "http://web-unicen.herokuapp.com/api/create",
     success: function(resultData){
       console.log(resultData.information);
-      getInformationByGroup();
+      ObtenerDato();
     },
     error:function(jqxml, status, errorThrown){
       console.log(errorThrown);
     }
   }
 );
-getInformationByGroup();
+ObtenerDato();
 }
-function getInformationByGroup(){
+ function GenerarTabla(Dato) {
+   var lista = "";
+   for (var i = 0; i < resultData.information.length; i++) {
+     lista += "<tr>";
+     lista += "<td class ='Artic'> " + resultData.information[i]["thing"].nombre + "</td>";
+     lista += "<td class= 'Artic'>: " + resultData.information[i]["thing"].descripcion + "</td>";
+     lista += "<td class ='Artic'> " + resultData.information[i]["thing"].precio + "</td>";
+     lista += "<td class ='Artic'> <button class='btn btn-default borrar' type='button' > Borrar </button> </td>"
+     lista +="  <p id='bordefinal' > </p>"
+     lista += "</tr>";
+     $("#listadoproductos").html(lista);
+    }
+    var botonesEliminar = $(".borrar");
+    for (var i = 0; i < botonesEliminar.length; i++) {
+      $(".borrar")[i].onclick = function(){
+        BorrarInfoporID(resultData.information[i]['_id']);
+      }
+
+    }
+  },
+
+
+
+function ObtenerDato(){
   var grupo = 69;
   $.ajax({
     method: "GET",
     dataType: 'JSON',
     url: "http://web-unicen.herokuapp.com/api/group/" + grupo,
     success:function (resultData){
-         var lista = "";
-         for (var i = 0; i < resultData.information.length; i++) {
-           lista += "<ul>";
-           lista += "<li class ='Artic'>nombre: " + resultData.information[i]["thing"].nombre + "</li>";
-           lista += "<li class= 'Artic'>dep: " + resultData.information[i]["thing"].descripcion + "</li>";
-           lista += "<li class ='Artic'>precio: " + resultData.information[i]["thing"].precio + "</li>";
-           lista += "<li class ='Artic'> <button class='btn btn-default borrar' type='button' > Borrar </button> </li>"
-           lista +="  <p id='bordefinal' > </p>"
-           lista += "</ul>";
-           $("#listadoproductos").html(lista);
+        GenerarTabla(resultData);
          }
-         var botonesEliminar = $(".borrar");
-         for (var i = 0; i < botonesEliminar.length; i++) {
-           asignarEliminar(i, resultData.information[i]['_id']);
-         }
-       },
     error:function(jqxml,status,errorThrown){
       console.log(errorThrown);
     },
@@ -107,21 +116,14 @@ function getInformationByGroup(){
 
 }
 
-function asignarEliminar(i, id){
-  var boton = $(".borrar")[i];
-  boton.onclick = function(){
-    deleteInformationByItem(id);
-  }
-}
-
-function deleteInformationByItem(item) {
+function BorrarInfoporID(item) {
   var id=item;
   $.ajax({
     url:"http://web-unicen.herokuapp.com/api/delete/" + id,
     method:"DELETE",
     success: function(resultData){
       console.log(resultData);
-      getInformationByGroup();
+      ObtenerDato();
     },
     error:function(jqxml, status, errorThrown){
       alert('Error!');
