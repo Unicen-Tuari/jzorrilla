@@ -2,13 +2,17 @@ img{
   position: relative;
   text-align: center;
 }
-div{
- background-color: black;
-}
+
 
 .contendor{
   position: absolute;
-  background: black;
+  background-color:  black;
+}
+.contenido{
+  margin: 20px;
+  text-align: center;
+  font-size: 16px;
+
 }
 
 .encabezado{
@@ -19,7 +23,7 @@ div{
 .saldoyapuesta{
   float: left;
   height: 380px;
-  border: 8px solid yellow;
+  border: 8px solid black;
   background-color: green;
 }
 .ruleta{
@@ -41,7 +45,12 @@ p{
   color: black;
   display: inline;
 }
-#cambia, #Money{
+.credito, .apuesta1 , .apuesta2{
+  font-size: 11px;
+  text-align: justify;
+  color:white;
+}
+#cambia{
   font-size: 36px;
   text-align: center;
   color: white;
@@ -63,6 +72,8 @@ tr{
 td{
   white-space: pre;
   border: 5px solid black;
+  background-color: red;
+  color : white;
 }
 #vacio{
   border: transparent;
@@ -71,7 +82,15 @@ label{
   text-align: center;
   font-size: 28px;
 }
+.negro{
+  background-color: black;
+}
 .boton{
-  display: inline-block;
-  
+  padding: 20px;
+}
+.P1{
+  float: left;
+}
+.P2{
+  float: right;
 }

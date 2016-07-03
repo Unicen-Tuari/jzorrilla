@@ -3,41 +3,73 @@
   <head>
     <meta charset="utf-8">
     <title> Ruleetiitaaah! </title>
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
     </head>
   <body>
   <div class=' contenedor'>
-      <div class='col-md-12 encabezado'><!-- Logo del Casino --->
-        <img src="images/leslu.png" alt="el casino papah!" />
+      <div class='col-md-12 encabezado contendor'><!-- Logo del Casino --->
+        <div class="P1">
+          <button class = " boton " type="button" name="button"><img src="images/cabrin.png" alt="" /></button>
 
+          <div class="">
+            <span id="Saldo1" class="credito"> Credito = $100 </span></li>
+            <div class="apuesta1">
+
+                apuesta
+
+
+            </div>
+
+          </div>
+
+        </div>
+        <img src="images/leslu.png" alt="el casino papah!" />
+        <div class="P2">
+            <button class = " boton " type="button" name="button"><img src="images/lenny.jpg" alt="" /></button>
+            <div class="">
+                <span id="Saldo2" class="credito"> Credito = $100 </span>
+                <div class="apuesta2">
+                    apuesta
+                </div>
+            </div>
+
+        </div>
       </div>
     <div class='col-md-6 saldoyapuesta'>  <!-- Vista de las apuesta y saldo --->
-      <span id="Saldo" class="credito"> Credito = $100 </span>
-      <ul>
-          <button class="btn - default  - boton"type="button" name="button">Pares</button>
-          <button class="btn - default  - boton"type="button" name="button">Impares</button>
-      </ul>
-      <ul>
-          <button class="btn - default  - boton"type="button" name="button">Rojos</button>
-          <button class="btn - default  - boton"type="button" name="button">Negros</button>
-      </ul>
-      <ul>
-          <button class="btn - default - boton "type="button" name="button">Mayores</button>
-          <button class="btn - default  - boton"type="button" name="button">Menores</button>
-          </ul>
+      <div class="contenido">
         <ul>
-          <button class= "btn btn-default -boton" type="button" name="button">Apostar</button>
+            <button id = "pares" class="btn - default  - boton"type="button" name="button">Pares</button>
+            <button id = "impares" class="btn - default  - boton"type="button" name="button">Impares</button>
         </ul>
+      </div>
+    <div class="contenido">
+      <ul>
+          <button id = "rojos" class="btn - default  - boton"type="button" name="button">Rojos</button>
+          <button id = "nigga"class="btn - default  - boton"type="button" name="button">Negros</button>
+      </ul>
+    </div>
+    <div class="contenido">
+      <ul>
+          <button id = "mayores" class="btn - default - boton "type="button" name="button">Mayores</button>
+          <button id = "menores" class="btn - default  - boton"type="button" name="button">Menores</button>
+        </ul>
+    </div>
+      <div class="contenido">
+        <ul>
+          <button id= "Apostar" class= "btn btn-default - boton" type="button" name="button">Apostar</button>
+        </ul>
+      </div>
+
     </div>
     <div class='col-md-6 ruleta'> <!-- Vista de la ruleta --->
        <table>
          <tr>
-           <td id='vacio'> </td>
+           <td id='vacio' class="negro"> </td>
            <td id='T1'> 1 </td>
            <td id='T4'> 4 </td>
            <td id='T7'> 7 </td>
+           <td id='T10'> 10 </td>
         </tr>
         <tr>
           <td id='T0'> 0 </td>
@@ -46,22 +78,23 @@
           <td id='T8'> 8 </td>
         </tr>
         <tr>
-          <td id='vacio'></td>
+          <td id='vacio' class="negro"></td>
           <td id='T3'> 3 </td>
           <td id='T6'> 6 </td>
           <td id='T9'> 9 </td>
         </tr>
+
        </table>
-      <Span><p id='cambia'>Let the game begin!</p></Span>
+       <div class="contenido">
+           <Span><p id='cambia'>Let the game begin!</p></Span>
+       </div>
+
       </div>
 
   </div>
-  <script src="js/jquery-3.0.0.min.js" charset="utf-8"></script>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+  <script src="js/jquery-3.0.0.js" charset="utf-8"></script>
+  <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
   </body>
 
 </html>
